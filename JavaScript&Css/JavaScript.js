@@ -19,7 +19,7 @@ function getHumanChoice() {
 for (let i = 0; i < 5; i++) {
   let computerChoice = getComputerChoice();
   let humanChoice = getHumanChoice();
-  
+
   playRound(humanChoice, computerChoice);
 
   function playRound(humanChoice, computerChoice) {
@@ -68,6 +68,4 @@ for (let i = 0; i < 5; i++) {
     }
     console.log(computerScore, humanScore);
   }
-
-
 }
