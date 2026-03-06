@@ -16,12 +16,12 @@ function getHumanChoice() {
   return humanChoice;
 }
 
-for (i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   let computerChoice = getComputerChoice();
   let humanChoice = getHumanChoice();
 
   function playRound(humanChoice, computerChoice) {
-    humanChoice = humanChoice.toUpperCase();
+    humanChoice = string(humanChoice).toUpperCase();
     console.log(humanChoice);
     switch (computerChoice) {
       case 1:
