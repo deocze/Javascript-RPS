@@ -16,56 +16,56 @@ function getHumanChoice() {
   return humanChoice;
 }
 
-for (let i = 0; i < 5; i++) {
-  let computerChoice = getComputerChoice();
-  let humanChoice = getHumanChoice();
+// for (let i = 0; i < 5; i++) {
+//   let computerChoice = getComputerChoice();
+//   let humanChoice = getHumanChoice();
 
-  playRound(humanChoice, computerChoice);
+//   playRound(humanChoice, computerChoice);
 
-  function playRound(humanChoice, computerChoice) {
-    humanChoice = humanChoice.toUpperCase();
-    console.log(humanChoice);
-    switch (computerChoice) {
-      case 1:
-        if (humanChoice == "ROCK") {
-          console.log("Tied");
-        }
-        if (humanChoice == "PAPER") {
-          console.log("You win");
-          humanScore += 1;
-        }
-        if (humanChoice == "SCISSORS") {
-          console.log("You lose");
-          computerScore += 1;
-        }
-        break;
-      case 2:
-        if (humanChoice == "ROCK") {
-          console.log("You lose");
-          computerScore += 1;
-        }
-        if (humanChoice == "PAPER") {
-          console.log("Tied");
-        }
-        if (humanChoice == "SCISSORS") {
-          console.log("You win");
-          humanScore += 1;
-        }
-        break;
-      case 3:
-        if (humanChoice == "ROCK") {
-          console.log("You win");
-          humanScore += 1;
-        }
-        if (humanChoice == "PAPER") {
-          console.log("You lose");
-          computerScore += 1;
-        }
-        if (humanChoice == "SCISSORS") {
-          console.log("Tied");
-        }
-        break;
-    }
-    console.log(computerScore, humanScore);
-  }
-}
+//   function playRound(humanChoice, computerChoice) {
+//     humanChoice = humanChoice.toUpperCase();
+//     console.log(humanChoice);
+//     switch (computerChoice) {
+//       case 1:
+//         if (humanChoice == "ROCK") {
+//           console.log("Tied");
+//         }
+//         if (humanChoice == "PAPER") {
+//           console.log("You win");
+//           humanScore += 1;
+//         }
+//         if (humanChoice == "SCISSORS") {
+//           console.log("You lose");
+//           computerScore += 1;
+//         }
+//         break;
+//       case 2:
+//         if (humanChoice == "ROCK") {
+//           console.log("You lose");
+//           computerScore += 1;
+//         }
+//         if (humanChoice == "PAPER") {
+//           console.log("Tied");
+//         }
+//         if (humanChoice == "SCISSORS") {
+//           console.log("You win");
+//           humanScore += 1;
+//         }
+//         break;
+//       case 3:
+//         if (humanChoice == "ROCK") {
+//           console.log("You win");
+//           humanScore += 1;
+//         }
+//         if (humanChoice == "PAPER") {
+//           console.log("You lose");
+//           computerScore += 1;
+//         }
+//         if (humanChoice == "SCISSORS") {
+//           console.log("Tied");
+//         }
+//         break;
+//     }
+//     console.log(computerScore, humanScore);
+//   }
+// }
