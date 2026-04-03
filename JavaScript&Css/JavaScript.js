@@ -16,6 +16,9 @@ function getHumanChoice() {
   return humanChoice;
 }
 
+
+
+
 // for (let i = 0; i < 5; i++) {
 //   let computerChoice = getComputerChoice();
 //   let humanChoice = getHumanChoice();
