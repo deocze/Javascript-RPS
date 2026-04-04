@@ -10,18 +10,17 @@ rock.addEventListener("click", (e) => playGame(e));
 paper.addEventListener("click", (e) => playGame(e));
 scissors.addEventListener("click", (e) => playGame(e));
 
-
 function getComputerChoice() {
   let computerChoice = Math.floor(Math.random() * max) + 1;
   return computerChoice;
 }
 
 function getHumanChoice(e) {
-  let text = e.target.innerText 
-  switch (text){
+  let text = e.target.innerText;
+  switch (text) {
     case "Rock":
-    console.log("User picked: Rock");
-    return 1;
+      console.log("User picked: Rock");
+      return 1;
     case "Paper":
       console.log("User picked: Paper");
       return 2;
@@ -31,12 +30,16 @@ function getHumanChoice(e) {
   }
 }
 
-
-
-function playGame(e){
+function playGame(e) {
   let computerChoice = getComputerChoice();
   let humanChoice = getHumanChoice(e);
-  playRound(humanChoice, computerChoice);
+  let score = playRound(humanChoice, computerChoice);
+  if (score < 5) {
+    console.log("Computer Score: %d\n", computerScore);
+    console.log("Your Score: %d\n\n", humanScore);
+  } else {
+    console.log("You WIN *User has reached 5 points*\n\n");
+  }
 
   function playRound(humanChoice, computerChoice) {
     switch (computerChoice) {
@@ -47,7 +50,6 @@ function playGame(e){
         if (humanChoice == 2) {
           console.log("You win");
           humanScore += 1;
-
         }
         if (humanChoice == 3) {
           console.log("You lose");
@@ -84,7 +86,6 @@ function playGame(e){
         console.log("\n");
         break;
     }
-    console.log("Computer Score: %d\n", computerScore,);
-    console.log("Your Score: %d\n\n", humanScore)
+    return humanScore;
   }
 }
