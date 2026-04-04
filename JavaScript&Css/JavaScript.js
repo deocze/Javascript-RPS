@@ -36,7 +36,6 @@ function getHumanChoice(e) {
 function playGame(e){
   let computerChoice = getComputerChoice();
   let humanChoice = getHumanChoice(e);
-
   playRound(humanChoice, computerChoice);
 
   function playRound(humanChoice, computerChoice) {
@@ -48,6 +47,7 @@ function playGame(e){
         if (humanChoice == 2) {
           console.log("You win");
           humanScore += 1;
+
         }
         if (humanChoice == 3) {
           console.log("You lose");
@@ -85,6 +85,6 @@ function playGame(e){
         break;
     }
     console.log("Computer Score: %d\n", computerScore,);
-    console.log("Your Score: %d\n", humanScore)
+    console.log("Your Score: %d\n\n", humanScore)
   }
 }

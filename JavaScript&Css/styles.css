@@ -1,34 +1,30 @@
-.heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
+h1 {
+  font-size: 40px;
 }
-.buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
-button{
-    align-items: center;
-    width: 100%;
-    border-radius: 20px;
-    font-size: 100px;
+button {
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 100px;
 }
-button:hover{
-    color: red;
+button:hover {
+  color: red;
 }
-body{
-    display: flex;
-    flex-direction: row;
-    gap: 200px;
-    min-height: 100vh;
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  min-height: 100vh;
 }
-button{
-    padding: 30px;
+button {
+  padding: 30px;
 }
